@@ -16,7 +16,7 @@ Then, I implemented spell correction with edit distance on the query and calcula
 <img src="figures/11.png" alt="drawing" width="600"/>
 </p>
 
-## 2. Classification
+## 2. Classification (KNN, Naive Bayes)
 In this phase, each document has been classified based on its content into four categories: world, sports, business, and science/tech. We used simple classifiers like Naive Bayes and K nearest neighbors (with cosine-similarity and Euclidean distance) to train on the training set and validate its performance on the test set.
 
 ### KNN Results
@@ -40,7 +40,7 @@ Then we examined the effects of text processing methods, i.e.,  stopword removal
 <img src="figures/44.png" alt="drawing" width="650"/>
 </p>
 
-## 2. Clustering
+## 2. Clustering (K-means, t-SNE, Word2Vec)
 We clusterd documents into four categories in tf-idf space with k-means algorithm and showed clsutred documents with t-SNE method in 2 dimentional space:
 
 <p align="center">
