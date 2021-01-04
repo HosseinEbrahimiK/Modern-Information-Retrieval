@@ -42,3 +42,25 @@ Then we examined the effects of text processing methods, i.e.,  stopword removal
 
 ## 2. Clustering
 We clusterd documents into four categories in tf-idf space with k-means algorithm and showed clsutred documents with t-SNE method in 2 dimentional space:
+
+<p align="center">
+<img src="figures/pic1.png" alt="drawing" width="480"/>
+</p>
+
+Ground truth:
+
+<p align="center">
+<img src="figures/pic2.png" alt="drawing" width="480"/>
+</p>
+
+In the next part, we found word embedding of words in each document with the CBOW method of word2Vec. Then, we examined different methods for finding each document representation based on its words: maximum elementwise, minimum elementwise, concatenate previous max and min vectors, average elementwise. I found average elementwise method worked better than other methods with a high margin. The result of clustering with the new representation of docs is as follow:
+
+<p align="center">
+<img src="figures/pic3.png" alt="drawing" width="480"/>
+</p>
+
+Ground truth:
+
+<p align="center">
+<img src="figures/pic4.png" alt="drawing" width="480"/>
+</p>
