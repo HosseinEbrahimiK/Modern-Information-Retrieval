@@ -41,3 +41,4 @@ Then we examined the effects of text processing methods, i.e.,  stopword removal
 </p>
 
 ## 2. Clustering
+We clusterd documents into four categories in tf-idf space with k-means algorithm and showed clsutred documents with t-SNE method in 2 dimentional space:
