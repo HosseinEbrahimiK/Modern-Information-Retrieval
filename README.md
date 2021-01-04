@@ -18,10 +18,26 @@ Then, I implemented spell correction with edit distance on the query and calcula
 
 ## 2. Classification
 In this phase, each document has been classified based on its content into four categories: world, sports, business, and science/tech. We used simple classifiers like Naive Bayes and K nearest neighbors (with cosine-similarity and Euclidean distance) to train on the training set and validate its performance on the test set.
+
 ### KNN Results
+
 <p align="center">
-<img src="figures/122.png" alt="drawing" width="450"/>
+<img src="figures/122.png" alt="drawing" width="350"/>
 </p>
 <p align="center">
 <img src="figures/22.png" alt="drawing" width="600"/>
 </p>
+
+### Naive Bayes Results
+
+<p align="center">
+<img src="figures/33.png" alt="drawing" width="600"/>
+</p>
+
+Then we examined the effects of text processing methods, i.e.,  stopword removal, lemmatization, stemming, on the classification's accuracy. The results showed changes in accuracy are minuscule.
+
+<p align="center">
+<img src="figures/44.png" alt="drawing" width="650"/>
+</p>
+
+## 2. Clustering
