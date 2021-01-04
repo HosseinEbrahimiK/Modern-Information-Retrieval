@@ -10,11 +10,18 @@ a request to this index, we can get a posting list of each word.
 <img src="figures/1.png" alt="drawing" width="800"/>
 </p>
 
-Then, I implemented spell correction with edit distance on the query and calculated scores of documents based on term frequency (tf) and inverse document frequency (idf) in the documents' vector space. The output of the algorithm was evaluated with MAP, F-Measure, R-Precision, and NDCG.
+Then, I implemented spell correction with edit distance on the query and calculated similarity scores of documents with the query based on term frequency (tf) and inverse document frequency (idf) in the documents' vector space. The output of the algorithm was evaluated with MAP, F-Measure, R-Precision, and NDCG.
 
 <p align="center">
 <img src="figures/11.png" alt="drawing" width="600"/>
 </p>
 
-## 2. Clustering and Classification
+## 2. Classification
 In this phase, each document has been classified based on its content into four categories: world, sports, business, and science/tech. We used simple classifiers like Naive Bayes and K nearest neighbors (with cosine-similarity and Euclidean distance) to train on the training set and validate its performance on the test set.
+### KNN Results
+<p align="center">
+<img src="figures/122.png" alt="drawing" width="450"/>
+</p>
+<p align="center">
+<img src="figures/22.png" alt="drawing" width="600"/>
+</p>
